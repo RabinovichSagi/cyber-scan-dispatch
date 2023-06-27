@@ -5,11 +5,11 @@ from typing import Union, List
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from db import DatabaseEngine
-from db_models import ScanJob
-from mock_cache import MockCache
-from mock_queue import MockScanJobQueue
-from mock_scanner import MockScanner
+from src.cyber_scan_dispatch.db import DatabaseEngine
+from src.cyber_scan_dispatch.db_models import ScanJob
+from src.cyber_scan_dispatch.mock_cache import MockCache
+from src.cyber_scan_dispatch.mock_queue import MockScanJobQueue
+from src.cyber_scan_dispatch.mock_scanner import MockScanner
 
 
 def _set_scan_job_status(session, mock_status_cache: MockCache, scan_jobs, status):
