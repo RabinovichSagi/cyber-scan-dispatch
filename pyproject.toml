@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "job-assingments"
+version = "0.1.0"
+description = ""
+authors = ["Sagi Rabinovich <rabinovichsagi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "job_assingments"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.98.0"
+sqlalchemy = "^2.0.17"
+uvicorn = "^0.22.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
